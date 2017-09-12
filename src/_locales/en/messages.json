@@ -1,0 +1,84 @@
+{
+  "extensionName": {
+    "message": "Inforoads web ext",
+    "description": "Name of the extension."
+  },
+
+  "extensionDescription": {
+    "message": "Provide inforoads weather status button in browser toolbar",
+    "description": "Description of the extension."
+  },
+
+  "airTemperature": {
+    "message": "T air",
+    "description": "Air temperature measuring name"
+  },
+  "roadTemperature": {
+    "message": "T road",
+    "description": "Road temperature measuring name"
+  },
+  "precipitation": {
+    "message": "Weather",
+    "description": "Precipitation measuring name"
+  },
+  "surface": {
+    "message": "Surface",
+    "description": "Surface measuring name"
+  },
+  "windSpeed": {
+    "message": "Wind speed",
+    "description": "Wind speed measuring name"
+  },
+  "windSpeedMeasuring": {
+    "message": "$WINDSPEED$ m/s",
+    "description": "Wind speed measuring",
+    "placeholders": {
+      "windSpeed": {
+        "content": "$1",
+        "example": "5.7"
+      }
+    }
+  },
+  "warning": {
+    "message": "Warnigng",
+    "description": "Warning measuring name"
+  },
+
+  "errorLoading": {
+    "message": "Error loading",
+    "description": "Message for error loading"
+  },
+  "citySelect": {
+    "message": "Select your city:",
+    "description": "Message to select user city"
+  },
+  "saveSettings": {
+    "message": "Save",
+    "description": "Button text to save settings"
+  },
+
+  "cityNameMinsk": {
+    "message": "Minsk",
+    "description": "Minsk"
+  },
+  "cityNameBrest": {
+    "message": "Brest",
+    "description": "Brest"
+  },
+  "cityNameGrodno": {
+    "message": "Grodno",
+    "description": "Grodno"
+  },
+  "cityNameVitebsk": {
+    "message": "Vitebsk",
+    "description": "Vitebsk"
+  },
+  "cityNameMogilev": {
+    "message": "Mogilev",
+    "description": "Mogilev"
+  },
+  "cityNameGomel": {
+    "message": "Gomel",
+    "description": "Gomel"
+  }
+}

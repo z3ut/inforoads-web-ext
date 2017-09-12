@@ -1,0 +1,40 @@
+{
+  "name": "inforoads-web-ext",
+  "version": "1.0.0",
+  "description": "Provide inforoads weather status button in browser toolbar",
+  "keywords": [
+    "inforoads",
+    "browser",
+    "extension"
+  ],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/z3ut/inforoads-web-ext.git"
+  },
+  "dependencies": {
+    "suncalc": "^1.8.0",
+    "weathericons": "^2.1.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-es2015": "^6.24.1",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.2",
+    "html-webpack-plugin": "^2.30.1",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
+    "webpack": "^3.5.5",
+    "webpack-merge": "^4.1.0"
+  },
+  "scripts": {
+    "build": "node_modules/.bin/webpack --display-error-details --config ./webpack.config.js",
+    "watch": "node_modules/.bin/webpack --display-error-details --watch --config ./webpack.config.js",
+    "start": "web-ext run -s dist/"
+  }
+}

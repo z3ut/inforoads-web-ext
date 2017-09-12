@@ -1,0 +1,84 @@
+{
+  "extensionName": {
+    "message": "Аддон Inforoads",
+    "description": "Name of the extension."
+  },
+
+  "extensionDescription": {
+    "message": "Предоставляет информацию о погоде в панели браузера",
+    "description": "Description of the extension."
+  },
+
+  "airTemperature": {
+    "message": "T воздуха",
+    "description": "Air temperature measuring name"
+  },
+  "roadTemperature": {
+    "message": "T дороги",
+    "description": "Road temperature measuring name"
+  },
+  "precipitation": {
+    "message": "Погода",
+    "description": "Precipitation measuring name"
+  },
+  "surface": {
+    "message": "Поверхность",
+    "description": "Surface measuring name"
+  },
+  "windSpeed": {
+    "message": "Ветер",
+    "description": "Wind speed measuring name"
+  },
+  "windSpeedMeasuring": {
+    "message": "$WINDSPEED$ м/с",
+    "description": "Wind speed measuring",
+    "placeholders": {
+      "windSpeed": {
+        "content": "$1",
+        "example": "5.7"
+      }
+    }
+  },
+  "warning": {
+    "message": "Опасность",
+    "description": "Warning measuring name"
+  },
+
+  "errorLoading": {
+    "message": "Ошибка при загрузке",
+    "description": "Message for error loading"
+  },
+  "citySelect": {
+    "message": "Выберите город:",
+    "description": "Message to select user city"
+  },
+  "saveSettings": {
+    "message": "Сохранить",
+    "description": "Button text to save settings"
+  },
+
+  "cityNameMinsk": {
+    "message": "Минск",
+    "description": "Minsk"
+  },
+  "cityNameBrest": {
+    "message": "Брест",
+    "description": "Brest"
+  },
+  "cityNameGrodno": {
+    "message": "Гродно",
+    "description": "Grodno"
+  },
+  "cityNameVitebsk": {
+    "message": "Витебск",
+    "description": "Vitebsk"
+  },
+  "cityNameMogilev": {
+    "message": "Могилев",
+    "description": "Mogilev"
+  },
+  "cityNameGomel": {
+    "message": "Гомель",
+    "description": "Gomel"
+  }
+}
