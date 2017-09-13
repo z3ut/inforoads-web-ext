@@ -51,7 +51,6 @@ export class MeasuringService {
       roadTemperature: disWeather.roadTemperature,
       precipitation: disWeather.precipitation,
       surface: disWeather.surface,
-      // surface: 'verjfoishd iosd gsdhgusd hsdgkshgdjksdgsd sdg',
       windSpeed: disWeather.windSpeed,
       warning: disWeather.warning,
 

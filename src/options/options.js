@@ -9,8 +9,8 @@ const selectCityElement = document.querySelector('[data-select-city]');
 const selectCityTextElement = document.querySelector('[data-select-city-text]');
 const saveSettingsElement = document.querySelector('[data-save-settings]');
 
-selectCityTextElement.innerHTML = browser.i18n.getMessage('citySelect');
-saveSettingsElement.innerHTML = browser.i18n.getMessage('saveSettings');
+selectCityTextElement.textContent = browser.i18n.getMessage('citySelect');
+saveSettingsElement.textContent = browser.i18n.getMessage('saveSettings');
 
 
 function populateSelectedCities(cities, selectedCity) {
@@ -18,7 +18,7 @@ function populateSelectedCities(cities, selectedCity) {
 
   cities.forEach(city => {
     const opt = document.createElement('option');
-    opt.innerHTML = city.name;
+    opt.textContent = city.name;
     opt.value = city.id;
     opt.selected = selectedCity.id === city.id;
     optionsFragment.appendChild(opt);

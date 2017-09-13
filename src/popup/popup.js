@@ -42,43 +42,43 @@ const measuringService = new MeasuringService();
 const measuringAppearanceService = new MeasuringAppearanceService();
 
 
-airTemperatureNameElement.innerHTML = browser.i18n.getMessage('airTemperature');
-roadTemperatureNameElement.innerHTML = browser.i18n.getMessage('roadTemperature');
-precipitationNameElement.innerHTML = browser.i18n.getMessage('precipitation');
-surfaceNameElement.innerHTML = browser.i18n.getMessage('surface');
-windSpeedNameElement.innerHTML = browser.i18n.getMessage('windSpeed');
-warningNameElement.innerHTML = browser.i18n.getMessage('warning');
+airTemperatureNameElement.textContent = browser.i18n.getMessage('airTemperature');
+roadTemperatureNameElement.textContent = browser.i18n.getMessage('roadTemperature');
+precipitationNameElement.textContent = browser.i18n.getMessage('precipitation');
+surfaceNameElement.textContent = browser.i18n.getMessage('surface');
+windSpeedNameElement.textContent = browser.i18n.getMessage('windSpeed');
+warningNameElement.textContent = browser.i18n.getMessage('warning');
 
 measuringService.getCurrentWeather().then(data => {
-  statusMessageElement.innerHTML = '';
+  statusMessageElement.textContent = '';
   loadingIndicatorElement.style.display = 'none';
   weatherContainerElement.style.display = 'block';
 
-  disTempElement.innerHTML += data.airTemperature;
+  disTempElement.textContent += data.airTemperature;
   disWeatherElement.setAttribute('class', data.weatherClass);
   disHeaderElement.style['background-color'] = data.airColor;
 
-  airTemperatureElement.innerHTML = data.airTemperature;
-  roadTemperatureElement.innerHTML = data.roadTemperature;
-  precipitationElement.innerHTML = data.precipitation;
-  surfaceElement.innerHTML = data.surface;
-  windSpeedElement.innerHTML = browser.i18n.getMessage('windSpeedMeasuring', data.windSpeed);
+  airTemperatureElement.textContent = data.airTemperature;
+  roadTemperatureElement.textContent = data.roadTemperature;
+  precipitationElement.textContent = data.precipitation;
+  surfaceElement.textContent = data.surface;
+  windSpeedElement.textContent = browser.i18n.getMessage('windSpeedMeasuring', data.windSpeed);
 
-  disNameElement.innerHTML = data.name;
-  timeElement.innerHTML = formatDate(data.date);
+  disNameElement.textContent = data.name;
+  timeElement.textContent = formatDate(data.date);
 
   disImgElement.src = data.imgSrc;
   disImgLinkElement.setAttribute('href', data.imgSrc);
 
   if (data.warning) {
     warningRowElement.style.visibility = 'visible';
-    warningElement.innerHTML = data.warning
+    warningElement.textContent = data.warning
   } else {
     warningRowElement.style.visibility = 'collapse';
   }
 }, err => {
   loadingIndicatorElement.style.display = 'none';
-  statusMessageElement.innerHTML = browser.i18n.getMessage('errorLoading');
+  statusMessageElement.textContent = browser.i18n.getMessage('errorLoading');
 });
 
 function formatDate(date) {
